@@ -1,0 +1,25 @@
+states which is a list of objects.
+The objects, which are the states, have 3 things
+    name, intents, patterns
+name = string
+intents = object
+patterns = array of strings
+
+intents has responses, actions, and args. They are each an array of strings
+    Actions and args must be the same length
+    example
+        "actions": [
+            "say",
+            "set_state"
+        ],
+        "args": [
+            "",
+            "STATE_QUESTION"
+        ]
+
+    actions must be chosen from a drop down menu
+    "set_state" "set_entity" "say" "goto_intent"
+
+    So what you can do is make it so that you start with  space for 1 action and 1 corresponding arg then u can click a + or whatever
+
+    patterns can be in one text area thing
